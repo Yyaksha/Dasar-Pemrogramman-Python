@@ -11,4 +11,4 @@ sisiC = float(input("Masukkan sisi C :"))
 
 kelilingSegitiga = sisiA + sisiB + sisiC
 
-print("kelilingSegitiga adalah %.0f"% kelilingSegitiga)
+print("keliling segitiga adalah %.0f"% kelilingSegitiga)
