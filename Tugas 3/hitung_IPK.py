@@ -1,10 +1,9 @@
-mtk_diskrit = float(input("Masukkan skor mtk diskrit :"))
-aljabar_linier = float(input("Masukkan skor aljabar linier :"))
-basis_data = float(input("Masukkan skor basis data :"))
-dasar_pemrogramman = float(input("Masukkan skor dasar pemrogramman :"))
-sistem_operasi = float(input("Masukkan skor sistem operasi :"))
-pkn = float(input("Masukkan skor pkn :"))
-inggris = float(input("Masukkan skor inggris :"))
+algoritma = float(input("Masukkan skor Algoritma :"))
+perancangan_objek = float(input("Masukkan skor Perancangan Objek :"))
+kalkulus = float(input("Masukkan skor Kalkulus :"))
+etika_profesi = float(input("Masukkan skor Etika Profesi :"))
+databases = float(input("Masukkan skor Databases :"))
+english = float(input("Masukkan skor English :"))
 
 def skorToBobot(skor):
   if skor >= 90:
@@ -28,18 +27,17 @@ def skorToBobot(skor):
   
 nilai_kredit = 3
 
-total_mtk_diskrit = nilai_kredit * skorToBobot(mtk_diskrit)
-total_aljabar_linier = nilai_kredit * skorToBobot(aljabar_linier)
-total_basis_data = nilai_kredit * skorToBobot(basis_data)
-total_dasar_pemrogramman = nilai_kredit * skorToBobot(dasar_pemrogramman)
-total_sistem_operasi = nilai_kredit * skorToBobot(sistem_operasi)
-total_pkn = nilai_kredit * skorToBobot(pkn)
-total_inggris = nilai_kredit * skorToBobot(inggris)
+total_algoritma = nilai_kredit * skorToBobot(algoritma)
+total_perancangan_objek = nilai_kredit * skorToBobot(perancangan_objek)
+total_kalkulus = nilai_kredit * skorToBobot(kalkulus)
+total_etika_profesi = nilai_kredit * skorToBobot(etika_profesi)
+total_databases = nilai_kredit * skorToBobot(databases)
+total_english = nilai_kredit * skorToBobot(english)
 
-total_bobot = total_mtk_diskrit + total_aljabar_linier + total_basis_data + total_dasar_pemrogramman + total_sistem_operasi + total_pkn + total_inggris
+total_bobot = total_algoritma + total_perancangan_objek + total_kalkulus + total_etika_profesi + total_databases + total_english
 
 def countIps(totalSkor, totalKredit):
   total_ipk = totalSkor / totalKredit
   return total_ipk
 
-print("Total nilai IPK anda :" , countIps(total_bobot, 21))
+print("Total nilai IPK anda : %.2f"%  countIps(total_bobot, 18))
