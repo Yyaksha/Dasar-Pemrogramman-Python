@@ -1,5 +1,4 @@
 name = "SUKABUMII"
-x = len(name)
 
 for i in range(5,0,-1):
   for j in range(len(name)):

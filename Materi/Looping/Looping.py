@@ -1,5 +1,4 @@
 name = "YAKSHAA"
-x = 5
 
 for i in range(len(name)):
   for j in range(len(name)):
