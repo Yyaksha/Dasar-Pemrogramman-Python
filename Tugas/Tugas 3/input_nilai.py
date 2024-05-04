@@ -1,4 +1,6 @@
 nilai = float(input("Masukkan nilai :"))
 
 if nilai >= 75:
-  print
+  print("Anda Lulus")
+else:
+  print("Anda tidak Lulus")
