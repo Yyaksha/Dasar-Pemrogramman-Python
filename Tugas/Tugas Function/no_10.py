@@ -1,4 +1,4 @@
-def palindrom(kata):
-  return kata == kata[::-1]
-hasil = palindrom(kata = "lever")
-print(hasil)
+def anagram(kata1, kata2):
+    return sorted(kata1) == sorted(kata2)
+
+print(anagram("listen", "silent"))
