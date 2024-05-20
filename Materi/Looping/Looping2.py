@@ -1,4 +1,4 @@
-name = "SUKABUMII"
+name = "000000000000000000000000"
 
 for i in range(5,0,-1):
   for j in range(len(name)):
@@ -9,16 +9,14 @@ for i in range(5,0,-1):
   print()
 
 
-# name = "SUKABUMII"
+for i in range(5):
+  for j in range(len(name)):
 
-# for i in range(5):
-#   for j in range(len(name)):
-
-#     if (j>=i) and (j<9-i):
-#       print(name[j], end=" ")
-#     else:
-#       print("*", end=" ")
-#   print()
+    if (j>=i) and (j<9-i):
+      print(name[j], end=" ")
+    else:
+      print("*", end=" ")
+  print()
 
 # * * * * B * * * *
 # * * * A B U * * *
